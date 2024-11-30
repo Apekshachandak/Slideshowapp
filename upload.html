@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload Images</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
+
+h1 {
+  margin-bottom: 60px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #030303;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.form-group input {
+  width: 300px;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #290e0e;
+}
+</style>
+</head>
+<body >
+  <div class="container">
+    <h1 style="font-family:'Brush Script MT',cursive;font-size:  100px;">Upload Images</h1>
+    <form>
+      <div class="form-group">
+        <label for="images" style="font-size: 30px;">Select Images:</label>
+        <input type="file" id="images" name="images" multiple accept="image/*">
+      </div>
+      <input type="submit" value="Upload" class="btn">
+    </form>
+  </div>
+</body>
+</html>

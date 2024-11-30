@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('home.jpg');
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+    font-family: Brush Script MT, cursive;
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #070707;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Home</h1>
+    <div class="image-container">
+      <img src="upload.png" alt="Upload Image" class="image">
+    </div>
+    <a href="upload.html" class="btn">Upload Images</a>
+    <div class="image-container">
+      <img src="createvideo.png" alt="Create Video" class="image">
+    </div>
+    <a href="createvideo.html" class="btn">Create a Video</a>
+  </div>
+</body>
+</html>

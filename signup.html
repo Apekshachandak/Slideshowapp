@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://images.unsplash.com/photo-1622976479615-38700d470a1c?q=80&w=2049&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); /* Set background image */
+  background-size: cover; 
+  background-position: center; 
+  color: white; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 30px; 
+  font-size: 36px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; 
+}
+
+.form-group input {
+  width: 300px;
+  padding: 10px; 
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px; /* Increase font size */
+  color: black; /* Change input text color to black for better visibility */
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px; /* Increase font size */
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <input type="submit" value="Submit" class="btn">
+    </form>
+  </div>
+</body>
+</html>

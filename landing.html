@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Landing Page</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://images.unsplash.com/photo-1679669693872-12d991fc9d93?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
+  background-size: cover; 
+  background-position: center; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 40px; 
+  font-size: 36px; 
+  color: #f3f2f2;
+  
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 40px; 
+  margin: 10px; 
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px; /* Increase border-radius for rounded corners */
+  font-size: 18px; /* Increase font size */
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Landing Page</h1>
+    <a href="signup.html" class="btn">Sign Up</a>
+    <a href="login.html" class="btn">Log In</a>
+  </div>
+</body>
+</html>

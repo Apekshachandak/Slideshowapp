@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: #f0f0f0; Light grey background */
+  /* Alternatively, use an image background */
+  background-image: url('https://img.freepik.com/free-photo/sunset-majestic-coastal-cliff-waves-breaking-generative-ai_188544-12582.jpg?w=1380&t=st=1707306406~exp=1707307006~hmac=048d08749aa4a49e7e2ffb776e15222f73253733b1aeb33d8bdd9efef58f162a');
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background: rgba(255, 255, 255, 0.8); Optional: Adds a slight white overlay to improve readability */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Bradley Hand, cursive;
+    background-color:rgb(241, 176, 98);
+  margin-bottom: 20px;
+  color: #efe7e7; /* Darker font color for better contrast */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #050505; /* Slightly darker label color for better readability */
+}
+
+.form-group input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Slight inner shadow for depth */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #4CAF50; /* Highlight color when input is focused */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 8px rgba(76, 175, 80, 0.6); /* More pronounced shadow for focus */
+}
+
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:rgb(241, 176, 98);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none; /* Remove default border */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background color and slight scale */
+}
+
+.btn:hover, .btn:focus {
+  background-color: #45a049;
+  transform: scale(1.05); /* Slightly enlarge button on hover/focus */
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+      </div>
+      <input type="submit" value="Submit" class="btn">
+      <div class="message"></div>
+    </form>
+  </div>
+
+  <script>
+    const form = document.querySelector('form');
+    const message = document.querySelector('.message');
+    
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const username = form.username.value;
+      const password = form.password.value;
+      
+      if (username === 'user' && password === '1234') {
+        message.textContent = 'Login Success';
+        message.style.color = 'green';
+      } else if (username === 'admin' && password === 'admin') {
+        message.textContent = 'Admin Login Success';
+        message.style.color = 'green';
+      } else {
+        message.textContent = 'Invalid username or password';
+        message.style.color = 'red';
+      }
+    });
+  </script>
+</body>
+</html>
